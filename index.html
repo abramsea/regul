@@ -23,7 +23,7 @@
             <div class="col-sm-12 col-md-12 col-lg-7">
                     <header class="header">
                         <div class="logo">
-                            <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
                         </div>
                         <div class="nav">
                             <a href="#">О компании</a>
@@ -92,36 +92,39 @@
                 </div>
             </div>
         </div>
-    </div>
 
-        <div class="container advantages">
-                <div class="row no-gutters">
-                    <div class="col-sm-8 col-md-8 col-lg-4 advantage">
-                        <img class="advantage-img" src="img/1.png" alt="quality">
-                        <div class="advantage-text">
-                            <h6 class="advantage-caption"><b>Качество</b></h6>
-                            <p class="advantage-description">Все наши собаки сертифицированы по поиску
-                             взрывчатых веществ Экспертно-консультационным Советом </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-md-8 col-lg-4 advantage">
-                        <img class="advantage-img" src="img/2.png" alt="quality">
-                        <div class="advantage-text">
-                            <h6 class="advantage-caption"><b>Квалификация</b></h6>
-                            <p class="advantage-description">Квалификация, многократно подтвержденная на сертификатных состязаниях, 
-                                выставках по безопасности, оперативных выездах </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-md-8 col-lg-4 advantage">
-                        <img class="advantage-img" src="img/3.png" alt="quality">
-                        <div class="advantage-text">
-                            <h6 class="advantage-caption"><b>Выгода</b></h6>
-                            <p class="advantage-description">КЦ «РЕГУЛ ГРУПП», может входить 
-                                    в состав служб безопасности, что позволит повысить эффективность работы и качество услуг </p>
+                    <div class="container advantages">
+                            <div class="row no-gutters">
+                                <div class="col-sm-8 col-md-8 col-lg-4 advantage">
+                                    <img class="advantage-img" src="img/1.png" alt="quality">
+                                    <div class="advantage-text">
+                                        <h6 class="advantage-caption"><b>Качество</b></h6>
+                                        <p class="advantage-description">Все наши собаки сертифицированы по поиску
+                                        взрывчатых веществ Экспертно-консультационным Советом </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-md-8 col-lg-4 advantage">
+                                    <img class="advantage-img" src="img/2.png" alt="quality">
+                                    <div class="advantage-text">
+                                        <h6 class="advantage-caption"><b>Квалификация</b></h6>
+                                        <p class="advantage-description">Квалификация, многократно подтвержденная на сертификатных состязаниях, 
+                                            выставках по безопасности, оперативных выездах </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 col-md-8 col-lg-4 advantage">
+                                    <img class="advantage-img" src="img/3.png" alt="quality">
+                                    <div class="advantage-text">
+                                        <h6 class="advantage-caption"><b>Выгода</b></h6>
+                                        <p class="advantage-description">КЦ «РЕГУЛ ГРУПП», может входить 
+                                            в состав служб безопасности, что позволит повысить эффективность работы и качество услуг </p>
+                                    </div>
+                                </div>
                             </div>
                     </div>
                 </div>
         </div>
+    </div>
+   
 
         <div class="container" id="services">
             <div class="row">
@@ -137,8 +140,8 @@
                     <h4 class="service-caption">Караульная служба по охране объектов</h4>
                     <img src="img/03.jpg" alt="dog" class="service-img">
                 </div>
-            </div>
-            <div class="row">
+            <!-- </div>
+            <div class="row"> -->
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <h4 class="service-caption">Обеспечение безопасности при проведении массовых мероприятий</h4>
                     <img src="img/04.jpg" alt="dog" class="service-img">
@@ -170,6 +173,7 @@
                 <img class="slider-img" src="img/lg.jpg" alt="LG">
                 <img class="slider-img" src="img/manezh.jpg" alt="manezh">
             </div>
+
             <hr>
         </div>
      
@@ -208,13 +212,20 @@
 
 
     <script>
-        $('.slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        });
-		
+        if (document.width > 800) {
+            $('.slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            }); } else {
+                $('.slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            });
+            }
     </script>        
 </body>
 </html>

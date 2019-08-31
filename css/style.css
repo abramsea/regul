@@ -29,7 +29,7 @@ a {
 }
 
 .logo {
-    margin-left: 30px;
+    margin-left: 130px;
 }
 
 .nav {
@@ -79,6 +79,11 @@ a {
     text-align: center;
 }
 
+.button-red:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
 .blue {
     background: #004b9a;
 }
@@ -109,6 +114,7 @@ a {
 
 .video {
     margin: 235px 0 0 140px;
+    max-width: 100%;
 }
 
 
@@ -153,9 +159,8 @@ a {
 /* next block */
 
 .advantages {
-    position: absolute;
-    top: 520px;
-    left: 5%;
+    position: relative;
+    top: -1620px;
     background: #fff;
     padding: 45px;
 }
@@ -218,7 +223,7 @@ a {
 /* next block */
 
 #services {
-    margin-top: 30px;
+    margin-top: -150px;
 }
 
 .service-caption {
@@ -302,6 +307,7 @@ a {
 
 .social a:hover {
     opacity: 0.7;
+    transition: all 0.3s;
 }
 
 .social a:not(:first-child) {
@@ -315,7 +321,65 @@ a {
 
 
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 1200px) {
+    .logo {
+    margin-left: 60px;
+    }
+
+    .nav {
+        margin-left: 80px;
+    }
+
+    .mini-caption {
+        margin-left: 80px;
+    }
+    
+    .main-caption {
+        margin: 55px 0 435px 80px;
+    }
+
+    .phone {
+        margin-left: 20px;
+    }
+
+    .button-red {
+        margin-left: 20px;
+    }
+
+    .pink-line {
+        width: 285px;
+        margin: -30px 0 0 67px ;
+    }
+
+    .about {
+        margin: 0 0 0 80px;
+    }
+
+    .video {
+        margin: 235px 0 0 70px;
+    }
+
+    .right {
+        margin-left: 67px;
+    }
+
+    .search .row {
+        margin-left: 30px;
+    }
+
+    .footer-nav {
+        margin-left: 0;
+    }
+    .service-heading {
+        top: -600px;
+        left: -520px;
+    }
+    
+}
+
+
+
+@media all and (max-width: 991px) {
     .right-content {
         box-shadow: none;
     }
@@ -323,21 +387,55 @@ a {
     .search .row {
         margin-left: 20px;
     }
-}
 
-@media all and (max-width: 767px) {
-    .mini-caption {
-        padding-top: 165px;
+    .advantages {
+        top: -3250px;
+    }
+
+    .video {
+        margin: 135px 0 0 70px;
+    }
+
+    .pink-line {
+        width: 380px;
+    }
+
+    #services {
+        margin-top: -240px;
+    }
+
+    .service-heading {
+        top: -1650px;
+        left: -380px;
     }
 
     .advantages {
-        top: 530px;
+        top: -3150px;
+    }
+    
+}
+
+@media all and (max-width: 767px) {
+
+    .advantages {
+        top: -3700px;
+    }
+
+    .mini-caption {
+        padding-top: 75px;
+    }
+    .main-caption {
+        margin: 55px 0 500px 80px;
+    }
+
+    .service-heading {
+        display: none;
     }
 
 }
 
 
-@media all and (max-width: 603px) {
+@media all and (max-width: 572px) {
     .caption {
         font-size: 30px;
     }
@@ -345,5 +443,50 @@ a {
         font-size: 20px;
     }
 
+    .nav a:not(:first-child) {
+        margin-left: 0px;
+    }
 
+    .nav {
+        flex-direction: column;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+    }
+
+    .footer-nav a:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .pink-line {
+        width: 235px;
+    }
 }
+
+@media all and (max-width: 520px) {
+
+    .advantages {
+        top: -3600px;
+    }
+}
+
+@media all and (max-width: 460px) {
+
+    .advantages {
+        top: -3500px;
+    }
+
+    .about {
+        margin: 0 0 0 60px;
+    }
+
+    .video {
+        margin: 135px 0 0 30px;
+    }
+
+    .nav {
+        margin-left: 30px;
+    }
+}
+
