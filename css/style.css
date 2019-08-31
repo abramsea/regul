@@ -478,7 +478,7 @@ a {
     }
 
     .about {
-        margin: 0 0 0 60px;
+        margin: 0 0 0 30px;
     }
 
     .video {
@@ -488,5 +488,36 @@ a {
     .nav {
         margin-left: 30px;
     }
+
+    .footer-nav {
+        margin-left: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+    .mini-caption {
+        margin-left: 20px;
+    }
+    
+    .main-caption {
+        margin: 55px 0 435px 20px;
+    }
+    
+
+
 }
+
+@media all and (max-width: 420px) {
+    .main-caption {
+        margin: 20px 0 465px 20px;
+    }
+    .advantages {
+        top: -3370px;
+    }
+    .caption {
+        line-height: 1;
+    }
+}
+
 
