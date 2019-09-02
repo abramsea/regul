@@ -43,10 +43,24 @@ a {
     color: #000;
 }
 
-.nav a:not(:first-child) {
+.nav li:not(:first-child) {
     margin-left: 35px;
 }
 
+.children li {
+    list-style: none;
+    margin: 0 auto !important;
+}
+
+.children {
+    opacity: 0;
+}
+
+.page_item_has_children:hover .children {
+    opacity: 1;
+    transition: all 0.3s;
+}
+ 
 /* next block */
 
 .right-content {
@@ -393,15 +407,19 @@ a {
     }
 
     .video {
-        margin: 135px 0 0 70px;
+        margin: 135px 0 0 0px;
+    }
+
+    .right {
+        margin-left: 0;
     }
 
     .pink-line {
-        width: 380px;
+        display: none;
     }
 
     #services {
-        margin-top: -240px;
+        margin-top: -340px;
     }
 
     .service-heading {
@@ -412,7 +430,38 @@ a {
     .advantages {
         top: -3150px;
     }
-    
+
+    .service-row {
+        text-align: center;
+    }
+
+    .main-welcome {
+        text-align: center;
+    }
+
+    .header.blue {
+        justify-content: space-between;
+    }
+    .about {
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .search {
+        text-align: center;
+    }
+
+    .no-padding-bottom {
+        margin: 0 auto;
+    }
+
+    .dog-container {
+        text-align: center;
+    }
+
+    .video-container {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -432,6 +481,11 @@ a {
         display: none;
     }
 
+    .trust {
+        margin-top: 90px;
+        text-align: center;
+    }
+
 }
 
 
@@ -443,7 +497,7 @@ a {
         font-size: 20px;
     }
 
-    .nav a:not(:first-child) {
+    .nav li:not(:first-child) {
         margin-left: 0px;
     }
 
@@ -455,12 +509,8 @@ a {
         flex-direction: row;
     }
 
-    .footer-nav a:not(:first-child) {
+    .footer-nav li:not(:first-child) {
         margin-left: 20px;
-    }
-
-    .pink-line {
-        width: 235px;
     }
 }
 
@@ -482,7 +532,7 @@ a {
     }
 
     .video {
-        margin: 135px 0 0 30px;
+        margin: 135px 0 0 0;
     }
 
     .nav {
@@ -517,6 +567,24 @@ a {
     }
     .caption {
         line-height: 1;
+    }
+
+    .header.blue {
+        flex-direction: column;
+    }
+    .tel {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .button-red {
+        margin: 10px auto;
+    }
+}
+
+@media all and (max-width: 326px) {
+    .right {
+        margin-left: 30px;
     }
 }
 
