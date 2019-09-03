@@ -402,6 +402,14 @@ a {
 
 
 @media all and (max-width: 991px) {
+    .mini-caption {
+        margin-left: 0;
+    }
+    
+    .main-caption {
+        margin: 55px 0 435px 0px;
+    }
+
     .right-content {
         box-shadow: none;
     }
@@ -487,7 +495,7 @@ a {
         padding-top: 75px;
     }
     .main-caption {
-        margin: 55px 0 500px 80px;
+        margin: 55px 0 500px 0;
     }
 
     .service-heading {
