@@ -167,6 +167,7 @@ a {
 .about {
     font-size: 18px;
     margin: 0 0 0 150px;
+    padding: 10px;
     max-width: 435px;
 }
 
@@ -317,6 +318,7 @@ a {
 
 .social {
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .social a:hover {
@@ -391,6 +393,12 @@ a {
     
 }
 
+@media all and (max-width: 1008px) {
+    .header.blue {
+    flex-direction: column;
+    }
+}
+
 
 
 @media all and (max-width: 991px) {
@@ -441,7 +449,9 @@ a {
 
     .header.blue {
         justify-content: space-between;
+        flex-direction: row;
     }
+
     .about {
         margin: 0 auto;
         text-align: justify;
@@ -461,6 +471,9 @@ a {
 
     .video-container {
         text-align: center;
+    }
+    .social {
+        padding-bottom: 0;
     }
 }
 
@@ -551,7 +564,7 @@ a {
     }
     
     .main-caption {
-        margin: 55px 0 435px 20px;
+        margin: 55px 0 455px 20px;
     }
     
 
@@ -560,10 +573,10 @@ a {
 
 @media all and (max-width: 420px) {
     .main-caption {
-        margin: 20px 0 465px 20px;
+        margin: 20px 0 485px 20px;
     }
     .advantages {
-        top: -3370px;
+        top: -3470px;
     }
     .caption {
         line-height: 1;
@@ -581,6 +594,13 @@ a {
         margin: 10px auto;
     }
 }
+
+@media all and (max-width: 354px) {
+    .advantages {
+        top: -3520px;
+    }
+}
+
 
 @media all and (max-width: 326px) {
     .right {
